@@ -2,3 +2,10 @@ C:\Skole\cases-i-csharp\treCases\fodbold\trecases\Fodbold\obj\Debug\ThreeCases.c
 C:\Skole\cases-i-csharp\treCases\fodbold\trecases\Fodbold\obj\Debug\ThreeCases.csproj.CoreCompileInputs.cache
 C:\Skole\cases-i-csharp\treCases\fodbold\trecases\Fodbold\obj\Debug\Fodbold.exe
 C:\Skole\cases-i-csharp\treCases\fodbold\trecases\Fodbold\obj\Debug\Fodbold.pdb
+C:\Skole\cases-i-csharp\treCases\fodbold\trecases\Fodbold\bin\Debug\Fodbold.exe.config
+C:\Skole\cases-i-csharp\treCases\fodbold\trecases\Fodbold\bin\Debug\Fodbold.exe
+C:\Skole\cases-i-csharp\treCases\fodbold\trecases\Fodbold\bin\Debug\Fodbold.pdb
+C:\Skole\cases-i-csharp\treCases\fodbold\trecases\Fodbold\bin\Debug\MyLogicClassLibraryDotNetFramework.dll
+C:\Skole\cases-i-csharp\treCases\fodbold\trecases\Fodbold\bin\Debug\MyLogicClassLibraryDotNetFramework.pdb
+C:\Skole\cases-i-csharp\treCases\fodbold\trecases\Fodbold\obj\Debug\ThreeCases.csproj.AssemblyReference.cache
+C:\Skole\cases-i-csharp\treCases\fodbold\trecases\Fodbold\obj\Debug\ThreeCases.csproj.CopyComplete

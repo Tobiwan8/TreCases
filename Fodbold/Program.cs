@@ -25,12 +25,8 @@ namespace Fodbold
             switch (tast)
             {
                 case "f":
-
-
-                    Console.ReadKey();
-                    Console.Clear();
+                    var football = new FootballView();
                     break;
-
                 case "d":
                     Console.ReadKey();
                     Console.Clear();

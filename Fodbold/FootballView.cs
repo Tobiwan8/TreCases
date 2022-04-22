@@ -7,31 +7,41 @@ using MyLogicClassLibraryDotNetFramework;
 
 namespace Fodbold
 {
-    internal class FootballView
+    public class FootballView
     {
         public FootballView()
         {
             int result = 0;
-            string goal = string.Empty;
+            string goal = "";
             bool succes = true;
+            int passes = 0;
 
             do
             {
                 Console.WriteLine("Indtast afleveringer: ");
                 succes = int.TryParse(Console.ReadLine(), out result);
 
+
                 Console.WriteLine("Skriv mål, hvis mål: ");
                 goal = Console.ReadLine();
+                goal = goal.ToLower();
 
                 if (!succes) Console.WriteLine("Ikke gyldig værdi, prøv igen...");
 
             } while (!succes);
 
             var football = new Football();
-            Football.HowMuchDoWeCheer
 
-            Console.WriteLine();
-
+            if (goal == "mål")
+            {
+                Console.WriteLine(football.WeCelebrateIfGoal(goal));
+            }
+            else
+            {
+                Console.WriteLine(football.HowMuchDoWeCheer(passes));
+            }
+            
+            Console.ReadKey();
         }
     }
 }

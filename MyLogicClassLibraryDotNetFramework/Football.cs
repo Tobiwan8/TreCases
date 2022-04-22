@@ -10,7 +10,7 @@ namespace MyLogicClassLibraryDotNetFramework
     {
         public string HowMuchDoWeCheer(int passes)
         {
-            string result = string.Empty;
+            string result = "";
 
             if (passes < 1)
             {
@@ -39,7 +39,6 @@ namespace MyLogicClassLibraryDotNetFramework
                 return "Olé Olé Olé";
             }
             return string.Empty;
-
         }
     }
 }
