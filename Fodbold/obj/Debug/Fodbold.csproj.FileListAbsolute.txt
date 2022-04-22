@@ -1,0 +1,8 @@
+C:\Skole\cases-i-csharp\treCases\fodbold\trecases\Fodbold\bin\Debug\Fodbold.exe.config
+C:\Skole\cases-i-csharp\treCases\fodbold\trecases\Fodbold\bin\Debug\Fodbold.exe
+C:\Skole\cases-i-csharp\treCases\fodbold\trecases\Fodbold\bin\Debug\Fodbold.pdb
+C:\Skole\cases-i-csharp\treCases\fodbold\trecases\Fodbold\obj\Debug\Fodbold.csproj.AssemblyReference.cache
+C:\Skole\cases-i-csharp\treCases\fodbold\trecases\Fodbold\obj\Debug\Fodbold.csproj.SuggestedBindingRedirects.cache
+C:\Skole\cases-i-csharp\treCases\fodbold\trecases\Fodbold\obj\Debug\Fodbold.csproj.CoreCompileInputs.cache
+C:\Skole\cases-i-csharp\treCases\fodbold\trecases\Fodbold\obj\Debug\Fodbold.exe
+C:\Skole\cases-i-csharp\treCases\fodbold\trecases\Fodbold\obj\Debug\Fodbold.pdb
