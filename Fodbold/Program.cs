@@ -6,46 +6,41 @@ using System.Threading.Tasks;
 
 namespace Fodbold
 {
-    class Program
+    public class Program
     {
         static void Main(string[] args)
         {
-            Jubel kamp = new Jubel()
-            {
-                mål = "",
-                afleveringer = 0
-            };
-            string huh = "Huh! ";
-            int i = 0;
+            Console.WriteLine("Fodbold (F)");
 
-            Console.WriteLine("Indtast afleveringer: ");
-            kamp.afleveringer = Convert.ToInt32(Console.ReadLine());
-            Console.WriteLine("Indtast mål: ");
-            kamp.mål =  Console.ReadLine();
-            string mål = kamp.mål.ToLower();
+            Console.WriteLine("Dans (D)");
 
-            if (mål == "mål")
+            Console.WriteLine("Password (P)");
+
+            Console.WriteLine("Vælg funktion: ");
+
+            string tast = Convert.ToString(Console.ReadKey().KeyChar);
+
+            Console.Clear();
+
+            switch (tast)
             {
-                Console.WriteLine("Olé Olé Olé");
-            }
-            else
-            {
-                if (kamp.afleveringer < 1)
-                {
-                    Console.WriteLine("Shh");
-                }
-                else if (kamp.afleveringer >= 10)
-                {
-                    Console.WriteLine("High Five - Jubel!!!");
-                }
-                else
-                {
-                    do
-                    {
-                        Console.Write(huh);
-                    }
-                    while (i++ <= kamp.afleveringer);
-                }
+                case "f":
+
+
+                    Console.ReadKey();
+                    Console.Clear();
+                    break;
+
+                case "d":
+                    Console.ReadKey();
+                    Console.Clear();
+                    break;
+
+                case "p":
+                    Console.ReadKey();
+                    Console.Clear();
+                    break;
+
             }
 
             Console.ReadKey();

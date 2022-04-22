@@ -8,7 +8,7 @@ namespace MyLogicClassLibraryDotNetFramework
 {
     public class Football
     {
-        public string HowMuchDoWeeCheer(int passes)
+        public string HowMuchDoWeCheer(int passes)
         {
             string result = string.Empty;
 
@@ -34,10 +34,11 @@ namespace MyLogicClassLibraryDotNetFramework
 
         public string WeCelebrateIfGoal(string goal)
         {
-            if (goal == "mål")
+            if (goal.ToLower() == "mål")
             {
                 return "Olé Olé Olé";
             }
+            return string.Empty;
 
         }
     }

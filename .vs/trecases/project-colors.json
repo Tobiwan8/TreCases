@@ -1,0 +1,31 @@
+{
+  "Version": 1,
+  "ProjectMap": {
+    "1275b44f-293a-4285-b21a-a941513a0b68": {
+      "ProjectGuid": "1275b44f-293a-4285-b21a-a941513a0b68",
+      "DisplayName": "ThreeCases",
+      "ColorIndex": 0
+    },
+    "82aa74a3-502d-4765-996c-183df689d20a": {
+      "ProjectGuid": "82aa74a3-502d-4765-996c-183df689d20a",
+      "DisplayName": "Dans",
+      "ColorIndex": 1
+    },
+    "dd0c9d96-e71e-4146-aecb-fd0b329b2e51": {
+      "ProjectGuid": "dd0c9d96-e71e-4146-aecb-fd0b329b2e51",
+      "DisplayName": "MyLogicClassLibrary",
+      "ColorIndex": 2
+    },
+    "a2fe74e1-b743-11d0-ae1a-00a0c90fffc3": {
+      "ProjectGuid": "a2fe74e1-b743-11d0-ae1a-00a0c90fffc3",
+      "DisplayName": "Miscellaneous Files",
+      "ColorIndex": -1
+    },
+    "1f8447a9-fc33-4479-98c1-7ad04f4d2354": {
+      "ProjectGuid": "1f8447a9-fc33-4479-98c1-7ad04f4d2354",
+      "DisplayName": "MyLogicClassLibraryDotNetFramework",
+      "ColorIndex": 3
+    }
+  },
+  "NextColorIndex": 4
+}
