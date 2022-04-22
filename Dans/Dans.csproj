@@ -4,10 +4,10 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{1275B44F-293A-4285-B21A-A941513A0B68}</ProjectGuid>
+    <ProjectGuid>{82AA74A3-502D-4765-996C-183DF689D20A}</ProjectGuid>
     <OutputType>Exe</OutputType>
-    <RootNamespace>Fodbold</RootNamespace>
-    <AssemblyName>Fodbold</AssemblyName>
+    <RootNamespace>Dans</RootNamespace>
+    <AssemblyName>Dans</AssemblyName>
     <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
@@ -43,7 +43,6 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Jubel.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>

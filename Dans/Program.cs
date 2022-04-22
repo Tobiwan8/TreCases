@@ -4,11 +4,12 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Fodbold
+namespace Dans
 {
-    class Jubel
+    internal class Program
     {
-        public int afleveringer;
-        public string mål;
+        static void Main(string[] args)
+        {
+        }
     }
 }

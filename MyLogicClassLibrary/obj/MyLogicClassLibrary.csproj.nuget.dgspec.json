@@ -1,0 +1,100 @@
+{
+  "format": 1,
+  "restore": {
+    "C:\\Skole\\cases-i-csharp\\treCases\\fodbold\\trecases\\MyLogicClassLibrary\\MyLogicClassLibrary.csproj": {}
+  },
+  "projects": {
+    "C:\\Skole\\cases-i-csharp\\treCases\\fodbold\\trecases\\Fodbold\\ThreeCases.csproj": {
+      "restore": {
+        "projectUniqueName": "C:\\Skole\\cases-i-csharp\\treCases\\fodbold\\trecases\\Fodbold\\ThreeCases.csproj",
+        "projectName": "ThreeCases",
+        "projectPath": "C:\\Skole\\cases-i-csharp\\treCases\\fodbold\\trecases\\Fodbold\\ThreeCases.csproj",
+        "frameworks": {
+          "net472": {
+            "projectReferences": {
+              "C:\\Skole\\cases-i-csharp\\treCases\\fodbold\\trecases\\MyLogicClassLibraryDotNetFramework\\MyLogicClassLibraryDotNetFramework.csproj": {
+                "projectPath": "C:\\Skole\\cases-i-csharp\\treCases\\fodbold\\trecases\\MyLogicClassLibraryDotNetFramework\\MyLogicClassLibraryDotNetFramework.csproj"
+              }
+            }
+          }
+        }
+      },
+      "frameworks": {
+        "net472": {}
+      }
+    },
+    "C:\\Skole\\cases-i-csharp\\treCases\\fodbold\\trecases\\MyLogicClassLibraryDotNetFramework\\MyLogicClassLibraryDotNetFramework.csproj": {
+      "restore": {
+        "projectUniqueName": "C:\\Skole\\cases-i-csharp\\treCases\\fodbold\\trecases\\MyLogicClassLibraryDotNetFramework\\MyLogicClassLibraryDotNetFramework.csproj",
+        "projectName": "MyLogicClassLibraryDotNetFramework",
+        "projectPath": "C:\\Skole\\cases-i-csharp\\treCases\\fodbold\\trecases\\MyLogicClassLibraryDotNetFramework\\MyLogicClassLibraryDotNetFramework.csproj",
+        "frameworks": {
+          "net472": {
+            "projectReferences": {}
+          }
+        }
+      },
+      "frameworks": {
+        "net472": {}
+      }
+    },
+    "C:\\Skole\\cases-i-csharp\\treCases\\fodbold\\trecases\\MyLogicClassLibrary\\MyLogicClassLibrary.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Skole\\cases-i-csharp\\treCases\\fodbold\\trecases\\MyLogicClassLibrary\\MyLogicClassLibrary.csproj",
+        "projectName": "MyLogicClassLibrary",
+        "projectPath": "C:\\Skole\\cases-i-csharp\\treCases\\fodbold\\trecases\\MyLogicClassLibrary\\MyLogicClassLibrary.csproj",
+        "packagesPath": "C:\\Users\\toblar\\.nuget\\packages\\",
+        "outputPath": "C:\\Skole\\cases-i-csharp\\treCases\\fodbold\\trecases\\MyLogicClassLibrary\\obj\\",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "C:\\Users\\toblar\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net6.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net6.0": {
+            "targetAlias": "net6.0",
+            "projectReferences": {
+              "C:\\Skole\\cases-i-csharp\\treCases\\fodbold\\trecases\\Fodbold\\ThreeCases.csproj": {
+                "projectPath": "C:\\Skole\\cases-i-csharp\\treCases\\fodbold\\trecases\\Fodbold\\ThreeCases.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net6.0": {
+          "targetAlias": "net6.0",
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.101\\RuntimeIdentifierGraph.json"
+        }
+      }
+    }
+  }
+}

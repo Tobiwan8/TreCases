@@ -1,0 +1,2 @@
+C:\Skole\cases-i-csharp\treCases\fodbold\trecases\MyLogicClassLibraryDotNetFramework\obj\Debug\MyLogicClassLibraryDotNetFramework.csproj.AssemblyReference.cache
+C:\Skole\cases-i-csharp\treCases\fodbold\trecases\MyLogicClassLibraryDotNetFramework\obj\Debug\MyLogicClassLibraryDotNetFramework.csproj.CoreCompileInputs.cache
