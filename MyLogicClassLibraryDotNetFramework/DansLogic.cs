@@ -6,22 +6,19 @@ using System.Threading.Tasks;
 
 namespace MyLogicClassLibraryDotNetFramework
 {
-    public class DansLogic
+    public class DanceLogic
     {
-        public int Pointsadded(int point1, int point2)
+        public string Navn = "";
+        public int Point = 0;
+        public DanceLogic(string navn, int point)
         {
-            int result = 0;
-
-            result = point1 + point2;
-
-            return result;
+            Navn = navn;
+            Point = point;
         }
 
-        public string NamesTogether(string navn1, string navn2)
+        public static DanceLogic operator +(DanceLogic danser1, DanceLogic danser2)
         {
-            string result = "";
-
-            result = navn1 + " & " + navn2 + " ";
+            DanceLogic result = new DanceLogic(, danser1.Point + danser2.Point);
 
             return result;
         }
