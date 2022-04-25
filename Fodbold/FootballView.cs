@@ -14,13 +14,12 @@ namespace Fodbold
             int result = 0;
             string goal = "";
             bool succes = true;
-            int passes = 0;
+            //int passes = 0;
 
             do
             {
                 Console.WriteLine("Indtast afleveringer: ");
-                succes = int.TryParse(Console.ReadLine(), out result);
-
+                succes = int.TryParse(Console.ReadLine(), out result);                
 
                 Console.WriteLine("Skriv mål, hvis mål: ");
                 goal = Console.ReadLine();
@@ -38,7 +37,7 @@ namespace Fodbold
             }
             else
             {
-                Console.WriteLine(football.HowMuchDoWeCheer(passes));
+                Console.WriteLine(football.HowMuchDoWeCheer(result));
             }
             
             Console.ReadKey();

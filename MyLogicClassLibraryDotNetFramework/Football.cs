@@ -27,7 +27,7 @@ namespace MyLogicClassLibraryDotNetFramework
                     result += "Huh! ";
                 }
 
-                result = "";
+                //result = "";
             }
             return result;
         }
