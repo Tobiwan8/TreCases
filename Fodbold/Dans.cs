@@ -15,7 +15,7 @@ namespace Fodbold
             string danser2 = "";
             int point1 = 0;
             int point2 = 0;
-            int pointsamlet = 0;
+            //int pointsamlet = 0;
 
             Console.WriteLine("Danser 1: ");
             danser1 = Console.ReadLine();
@@ -26,9 +26,11 @@ namespace Fodbold
             Console.WriteLine("indtast point: ");
             point2 = Convert.ToInt32(Console.ReadLine());
 
-            pointsamlet = point1 + point2;
+            //pointsamlet = point1 + point2;
+            var dans = new DansLogic();
 
-            Console.WriteLine("{0} & {1} ", danser1, danser2 + pointsamlet);
+            Console.WriteLine(dans.NamesTogether(danser1, danser2) + dans.Pointsadded(point1, point2));
+                    //Console.WriteLine("{0} & {1} {2}", danser1, danser2, pointsamlet);
 
             Console.ReadKey();
 
