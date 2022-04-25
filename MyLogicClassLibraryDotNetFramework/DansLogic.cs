@@ -6,7 +6,8 @@ using System.Threading.Tasks;
 
 namespace MyLogicClassLibraryDotNetFramework
 {
-    internal class Class1
+    public class DansLogic
     {
+        
     }
 }
