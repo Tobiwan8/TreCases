@@ -32,7 +32,7 @@ namespace Fodbold
                     break;
 
                 case "p":
-                    //var password = new Passwords();
+                    var password = new Passwording();
                     break;
 
             }

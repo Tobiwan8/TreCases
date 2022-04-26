@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace MyLogicClassLibraryDotNetFramework
 {
-    internal class PasswordLogic
+    public class PasswordLogic
     {
     }
 }
