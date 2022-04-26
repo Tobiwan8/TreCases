@@ -8,8 +8,8 @@ namespace MyLogicClassLibraryDotNetFramework
 {
     public class DanceLogic
     {
-        public string Navn = "";
-        public int Point = 0;
+        public string Navn;
+        public int Point;
         public DanceLogic(string navn, int point)
         {
             Navn = navn;
@@ -18,9 +18,9 @@ namespace MyLogicClassLibraryDotNetFramework
 
         public static DanceLogic operator +(DanceLogic danser1, DanceLogic danser2)
         {
-            DanceLogic result = new DanceLogic(, danser1.Point + danser2.Point);
-
-            return result;
+            return new DanceLogic(danser1.Navn + " & " + danser2.Navn, danser1.Point + danser2.Point);
+            //DanceLogic resultat = new DanceLogic(,);
+            //return resultat;
         }
             
     }

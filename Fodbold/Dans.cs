@@ -20,15 +20,17 @@ namespace Fodbold
             navn1 = Console.ReadLine();
             Console.WriteLine("indtast point: ");
             point1 = Convert.ToInt32(Console.ReadLine());
-            var danser1 = new DanceLogic(navn1, point1);
+            DanceLogic danser1 = new DanceLogic(navn1, point1);
             Console.WriteLine("Danser 2: ");
             navn2 = Console.ReadLine();
             Console.WriteLine("indtast point: ");
             point2 = Convert.ToInt32(Console.ReadLine());
             var danser2 = new DanceLogic(navn2, point2);
 
+            DanceLogic object3 = danser1 + danser2;
 
-            Console.WriteLine(danser1 + danser2);                  
+
+            Console.WriteLine(object3.Navn + object3.Point);                  
 
             Console.ReadKey();
 
