@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
-//using MyLogicClassLibraryDotNetFramework;
+using MyLogicClassLibraryDotNetFramework;
 using System.IO;
 
 namespace Fodbold
@@ -32,9 +32,22 @@ namespace Fodbold
                     brugernavn = brugernavn.ToLower();
                     Console.WriteLine("Vælg password: ");
                     password = Console.ReadLine();
-                    //pwcondition = password.Contains();
-                    string nyBruger = ($"{brugernavn} {password}");
-                    File.AppendAllText(@"C:\Skole\cases-i-csharp\treCases\fodbold\trecases\Password\datafil.txt", nyBruger + Environment.NewLine, Encoding.Unicode);
+                    PasswordLogic passlog = new PasswordLogic();
+                    string nyBruger = ($"{brugernavn} /// {password}");
+                    
+
+                    if (!passlog.pwconditions(password, 12))
+                    {
+                        Console.WriteLine("Ugyldigt password");
+                        Console.ReadKey();
+                    }
+                    else
+                    {
+                        File.AppendAllText(@"C:\Skole\cases-i-csharp\treCases\fodbold\trecases\Password\datafil.txt", nyBruger + Environment.NewLine, Encoding.Unicode);
+                        Console.WriteLine("bruger oprettet");
+                        Console.ReadKey();
+                    }
+                    
 
                     Console.ReadKey();
                     Console.Clear();

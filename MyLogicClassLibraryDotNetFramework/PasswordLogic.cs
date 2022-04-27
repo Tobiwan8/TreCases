@@ -9,40 +9,42 @@ namespace MyLogicClassLibraryDotNetFramework
     public class PasswordLogic
     {
         
-            public static bool pwconditions(string Input, int Minimum)
+            public bool pwconditions(string Input, int Minimum)
             {
                 bool harTal = false;
                 bool harStort = false;
                 bool harLille = false;
                 bool harSpec = false;
-                char currentCharacter;
+                char CharacterCount;
 
-                if (!(input.Length >= minimum))
+                if (!(Input.Length >= Minimum))
                 {
                     return false;
                 }
 
-                for (int i = 0; i < input.Length; i++)
+                if (Input.Substring(0)=)
+
+                for (int i = 0; i < Input.Length; i++)
                 {
 
                 }
 
-                for (int i = 0; i < input.Length; i++)
+                for (int i = 0; i < Input.Length; i++)
                 {
-                    currentCharacter = input[i];
-                    if (char.IsDigit(currentCharacter))
+                    CharacterCount = Input[i];
+                    if (char.IsDigit(CharacterCount))
                     {
                         harTal = true;
                     }
-                    else if (char.IsUpper(currentCharacter))
+                    else if (char.IsUpper(CharacterCount))
                     {
                         harStort = true;
                     }
-                    else if (char.IsLower(currentCharacter))
+                    else if (char.IsLower(CharacterCount))
                     {
                         harLille = true;
                     }
-                    else if (!char.IsLetterOrDigit(currentCharacter))
+                    else if (!char.IsLetterOrDigit(CharacterCount))
                     {
                         harSpec = true;
                     }
@@ -52,6 +54,7 @@ namespace MyLogicClassLibraryDotNetFramework
                         return true;
                     }
                 }
+                return false;
             }
         
     }
