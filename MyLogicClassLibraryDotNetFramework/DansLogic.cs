@@ -19,8 +19,7 @@ namespace MyLogicClassLibraryDotNetFramework
         public static DanceLogic operator +(DanceLogic danser1, DanceLogic danser2)
         {
             return new DanceLogic(danser1.Navn + " & " + danser2.Navn, danser1.Point + danser2.Point);
-            //DanceLogic resultat = new DanceLogic(,);
-            //return resultat;
+            
         }
             
     }

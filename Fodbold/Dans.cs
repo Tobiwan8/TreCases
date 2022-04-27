@@ -29,11 +29,9 @@ namespace Fodbold
 
             DanceLogic object3 = danser1 + danser2;
 
-
             Console.WriteLine(object3.Navn + object3.Point);                  
 
             Console.ReadKey();
-
         }
     }
 }

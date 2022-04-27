@@ -3,6 +3,8 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+//using MyLogicClassLibraryDotNetFramework;
+using System.IO;
 
 namespace Fodbold
 {
@@ -12,6 +14,8 @@ namespace Fodbold
         {
             string brugernavn = "";
             string password = "";
+            //bool pwcondition = true;
+            string[] datafil = File.ReadAllLines(@"C:\Skole\cases-i-csharp\treCases\fodbold\trecases\Password\datafil.txt", Encoding.Unicode);
 
             Console.WriteLine("Vælg funktion");
             Console.WriteLine("(O) Opret bruger");
@@ -25,10 +29,17 @@ namespace Fodbold
                 case "o":
                     Console.WriteLine("Vælg brugernavn: ");
                     brugernavn = Console.ReadLine();
-                    Console.WriteLine("Password skal indeholde minimum 12 karakterer. Der skal varieres mellem store og små bogstaver, indeholde tal (ikke først eller sidst) og specialtegn.");
+                    brugernavn = brugernavn.ToLower();
                     Console.WriteLine("Vælg password: ");
                     password = Console.ReadLine();
+                    //pwcondition = password.Contains();
+                    string nyBruger = ($"{brugernavn} {password}");
+                    File.AppendAllText(@"C:\Skole\cases-i-csharp\treCases\fodbold\trecases\Password\datafil.txt", nyBruger + Environment.NewLine, Encoding.Unicode);
+
+                    Console.ReadKey();
+                    Console.Clear();
                     break;
+
                 case "l":
 
                     break;
