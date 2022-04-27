@@ -9,53 +9,59 @@ namespace MyLogicClassLibraryDotNetFramework
     public class PasswordLogic
     {
         
-            public bool pwconditions(string Input, int Minimum)
+        public bool pwconditions(string Input, int Minimum)
+        {
+            bool harTal = false;
+            bool harStort = false;
+            bool harLille = false;
+            bool harSpec = false;
+            char CharacterCount;
+
+            if (!(Input.Length >= Minimum))
             {
-                bool harTal = false;
-                bool harStort = false;
-                bool harLille = false;
-                bool harSpec = false;
-                char CharacterCount;
-
-                if (!(Input.Length >= Minimum))
-                {
-                    return false;
-                }
-
-                if (Input.Substring(0)=)
-
-                for (int i = 0; i < Input.Length; i++)
-                {
-
-                }
-
-                for (int i = 0; i < Input.Length; i++)
-                {
-                    CharacterCount = Input[i];
-                    if (char.IsDigit(CharacterCount))
-                    {
-                        harTal = true;
-                    }
-                    else if (char.IsUpper(CharacterCount))
-                    {
-                        harStort = true;
-                    }
-                    else if (char.IsLower(CharacterCount))
-                    {
-                        harLille = true;
-                    }
-                    else if (!char.IsLetterOrDigit(CharacterCount))
-                    {
-                        harSpec = true;
-                    }
-
-                    if (harTal && harStort && harLille && harSpec)
-                    {
-                        return true;
-                    }
-                }
                 return false;
             }
+            if (Input.StartsWith())
+            { 
+
+            }
+            if (Input.EndsWith())
+            {
+
+            }
+
+            for (int i = 0; i < Input.Length; i++)
+            {
+
+            }
+
+            for (int i = 0; i < Input.Length; i++)
+            {
+                CharacterCount = Input[i];
+                if (char.IsDigit(CharacterCount))
+                {
+                    harTal = true;
+                }
+                else if (char.IsUpper(CharacterCount))
+                {
+                    harStort = true;
+                }
+                else if (char.IsLower(CharacterCount))
+                {
+                    harLille = true;
+                }
+                else if (!char.IsLetterOrDigit(CharacterCount))
+                {
+                    harSpec = true;
+                }
+
+                if (harTal && harStort && harLille && harSpec)
+                {
+                    return true;
+                }
+            }
+            return false;
+        }
         
     }
 }
