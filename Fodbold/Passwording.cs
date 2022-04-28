@@ -17,6 +17,7 @@ namespace Fodbold
             string[] datafil = File.ReadAllLines(@"C:\Skole\cases-i-csharp\treCases\fodbold\trecases\Password\datafil.txt", Encoding.Unicode);
             PasswordLogic passlog = new PasswordLogic();
             string nyBruger;
+            string fundet = "";
 
             Console.WriteLine("Vælg funktion");
             Console.WriteLine("(O) Opret bruger");
@@ -34,7 +35,7 @@ namespace Fodbold
                     Console.WriteLine("Vælg password: ");
                     password = Console.ReadLine();
                     nyBruger = ($"{brugernavn} /// {password}");
-                    
+
 
                     if (!passlog.pwconditions(password, 12))
                     {
@@ -48,7 +49,7 @@ namespace Fodbold
                         Console.WriteLine("bruger oprettet");
                         Console.ReadKey();
                     }
-                    
+
 
                     Console.ReadKey();
                     break;
@@ -58,49 +59,47 @@ namespace Fodbold
                     brugernavn = Console.ReadLine();
                     brugernavn = brugernavn.ToLower();
 
-                    if (!datafil.Contains(brugernavn))
-                    {
-                        Console.WriteLine("bruger ikke fundet");
-                        Console.ReadKey();
-                    }
-                    else
-                    {
-                        Console.WriteLine("indtast nyt password: ");
-                        password = Console.ReadLine();
-                        nyBruger = ($"{brugernavn} /// {password}");
 
-
-                        if (datafil.Contains(password))
+                    foreach (var item in datafil)
+                    {
+                        if (!item.Contains(brugernavn))
                         {
-                            Console.WriteLine("password allerede i brug");
+                            Console.WriteLine("bruger ikke fundet");
                             Console.ReadKey();
+                            fundet = "fundet";
                         }
-                        else
+                        if (fundet != "fundet")
                         {
-                            if (!passlog.pwconditions(password, 12))
+                            Console.WriteLine("indtast nyt password: ");
+                            password = Console.ReadLine();
+                            nyBruger = ($"{brugernavn} /// {password}");
+
+
+                            if (item.Contains(password))
                             {
-                                Console.WriteLine("Ugyldigt password");
+                                Console.WriteLine("password allerede i brug");
                                 Console.ReadKey();
                             }
                             else
                             {
-                                File.AppendAllText(@"C:\Skole\cases-i-csharp\treCases\fodbold\trecases\Password\datafil.txt", nyBruger + Environment.NewLine, Encoding.Unicode);
-                                datafil = File.ReadAllLines(@"C:\Skole\cases-i-csharp\treCases\fodbold\trecases\Password\datafil.txt", Encoding.Unicode);
-                                Console.WriteLine("bruger oprettet");
-                                Console.ReadKey();
-                            }
+                                if (!passlog.pwconditions(password, 12))
+                                {
+                                    Console.WriteLine("Ugyldigt password");
+                                    Console.ReadKey();
+                                }
+                                else
+                                {
+                                    File.AppendAllText(@"C:\Skole\cases-i-csharp\treCases\fodbold\trecases\Password\datafil.txt", nyBruger + Environment.NewLine, Encoding.Unicode);
+                                    datafil = File.ReadAllLines(@"C:\Skole\cases-i-csharp\treCases\fodbold\trecases\Password\datafil.txt", Encoding.Unicode);
+                                    Console.WriteLine("bruger oprettet");
+                                    Console.ReadKey();
+                                }
 
+                            }
                         }
                     }
-                    
-
-
-
-                    Console.ReadKey();
                     break;
             }
-
-            Console.ReadKey();
         }
     }
 }
