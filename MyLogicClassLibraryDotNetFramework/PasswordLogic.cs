@@ -16,18 +16,25 @@ namespace MyLogicClassLibraryDotNetFramework
             bool harLille = false;
             bool harSpec = false;
             char CharacterCount;
+            char firstCount;
+            char lastCount;
 
             if (!(Input.Length >= Minimum))
             {
                 return false;
             }
-            if (Input.StartsWith())
-            { 
 
-            }
-            if (Input.EndsWith())
+
+            firstCount = Input[Input.Length-Input.Length+1];
+            if (char.IsDigit(firstCount))
             {
-
+                return false;
+            }
+            
+            lastCount = Input[Input.Length-1];
+            if (char.IsDigit(lastCount))
+            {
+                return false;
             }
 
             for (int i = 0; i < Input.Length; i++)
