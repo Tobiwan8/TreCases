@@ -8,9 +8,9 @@ using System.IO;
 
 namespace Fodbold
 {
-    public class Passwording
+    public class ReadWriteToFileView
     {
-        public Passwording()
+        public ReadWriteToFileView()
         {
             string brugernavn;
             string password;
@@ -37,7 +37,7 @@ namespace Fodbold
                     nyBruger = ($"{brugernavn} /// {password}");
 
 
-                    if (!passlog.Pwconditions(password, 12))
+                    if (!passlog.pwconditions(password, 12))
                     {
                         Console.WriteLine("Ugyldigt password");
                         Console.ReadKey();
@@ -82,7 +82,7 @@ namespace Fodbold
                             }
                             else
                             {
-                                if (!passlog.Pwconditions(password, 12))
+                                if (!passlog.pwconditions(password, 12))
                                 {
                                     Console.WriteLine("Ugyldigt password");
                                     Console.ReadKey();
