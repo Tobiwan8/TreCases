@@ -25,7 +25,7 @@ namespace MyLogicClassLibraryDotNetFramework
             }
 
 
-            firstCount = Input[Input.Length-Input.Length+1];
+            firstCount = Input[Input.Length-Input.Length];
             if (char.IsDigit(firstCount))
             {
                 return false;
@@ -37,9 +37,9 @@ namespace MyLogicClassLibraryDotNetFramework
                 return false;
             }
 
-            for (int i = 0; i < Input.Length; i++)
+            if (Input.Contains(" "))
             {
-
+                return false;
             }
 
             for (int i = 0; i < Input.Length; i++)
